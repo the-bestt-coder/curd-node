@@ -1,0 +1,97 @@
+* {
+    
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    margin: 100px;
+    font-family: Arial;
+}
+.create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: URL('https://i.postimg.cc/wv5J6vb2/mario-gogh-VBLHICVh-lI-unsplash.jpg');
+    background-size: cover;
+    position: relative;
+}
+.create .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 27, 97, .25);
+    z-index: 1;
+}
+.account {
+    background-color: #FFF;
+    width: 450px;
+    padding: 45px;
+    border-radius: 5px;
+    z-index: 2;
+}
+.account h2 {
+    color: #1C2540;
+    text-align: center;
+    margin-bottom: 28px;
+    font-weight: normal;
+}
+form .group {
+    position: relative;
+}
+form label {
+    display: block;
+    color: #424767;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+ 
+form input:not([type="radio"]) {
+    color: #424767;
+    width: 100%;
+    margin-bottom: 28px;
+    padding: 10px 10px 10px 45px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    outline: none;
+}
+form input::placeholder {
+    color: #424767;
+    opacity: .7;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    font-size: 15px;
+    color: #FFF;
+    background-color: #242E4c;
+    border: 1px solid #242E4c;
+    transition: .5s;
+    outline: 0;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background-color: #0E121d;
+}
+form .or {
+    display: block;
+    text-align: center;
+    color: #4c4c4c;
+    font-size: 13px;
+}
+
+form p {
+    text-align: center;
+    color: #424767;
+    font-size: 14px;
+}
+form p span {
+    font-weight: bold;
+    cursor: pointer;
+}
